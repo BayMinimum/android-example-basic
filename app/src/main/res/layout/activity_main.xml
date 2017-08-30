@@ -6,13 +6,151 @@
     android:layout_height="match_parent"
     tools:context="me.baymallow.example.part03.MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/baymax_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="텍스트 자료"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baymax_title" />
+
+    <Button
+        android:id="@+id/baymax_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="이미지"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baymax_text" />
+
+    <Button
+        android:id="@+id/baymax_is_cute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="귀엽다"
+        app:layout_constraintStart_toStartOf="@+id/baymax_image"
+        app:layout_constraintTop_toBottomOf="@+id/baymax_is" />
+
+    <TextView
+        android:id="@+id/baymax_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="베이맥스 특강"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/baymax_is_very_cute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:text="매우 귀엽다"
+        app:layout_constraintStart_toEndOf="@+id/baymax_is_cute"
+        app:layout_constraintTop_toTopOf="@+id/baymax_is_cute" />
+
+    <Button
+        android:id="@+id/baymax_is_not"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:text="귀엽지 않다"
+        app:layout_constraintEnd_toStartOf="@+id/baymax_is_cute"
+        app:layout_constraintTop_toTopOf="@+id/baymax_is_cute" />
+
+    <ImageButton
+        android:id="@+id/search_baymax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baymax_is_cute"
+        app:srcCompat="@drawable/ic_search" />
+
+    <TextView
+        android:id="@+id/baymax_is"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:text="베이맥스는..."
+        app:layout_constraintStart_toStartOf="@+id/baymax_is_not"
+        app:layout_constraintTop_toBottomOf="@+id/baymax_image" />
+
+    <CheckBox
+        android:id="@+id/baymax_agree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="위의 모든 자료를 확인하였으며, 베이맥스의 귀여움에 동의합니다."
+        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/baymax_report"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="감상문 작성(AU지급)"
+        android:inputType="textLongMessage"
+        app:layout_constraintBottom_toTopOf="@+id/baymax_agree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/baymax_agree"
+        app:layout_constraintTop_toBottomOf="@+id/search_baymax" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="제출"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/save"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="0dp"
+        android:text="임시저장"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/submit"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="0dp" />
 
 </android.support.constraint.ConstraintLayout>
