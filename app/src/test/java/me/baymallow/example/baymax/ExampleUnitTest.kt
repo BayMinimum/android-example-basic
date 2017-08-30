@@ -1,4 +1,4 @@
-package me.baymallow.example.part03
+package me.baymallow.example.baymax
 
 import org.junit.Test
 

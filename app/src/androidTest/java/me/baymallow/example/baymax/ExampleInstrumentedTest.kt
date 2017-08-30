@@ -1,4 +1,4 @@
-package me.baymallow.example.part03
+package me.baymallow.example.baymax
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

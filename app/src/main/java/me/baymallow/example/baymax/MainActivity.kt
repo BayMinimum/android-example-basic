@@ -1,4 +1,4 @@
-package me.baymallow.example.part03
+package me.baymallow.example.baymax
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

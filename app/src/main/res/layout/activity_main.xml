@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="me.baymallow.example.part03.MainActivity">
+    tools:context="me.baymallow.example.baymax.MainActivity">
 
     <Button
         android:id="@+id/baymax_text"
@@ -80,23 +80,20 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/baymax_is_cute"
-        app:srcCompat="@drawable/ic_search" />
+        app:srcCompat="@drawable/ic_search"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/baymax_image" />
 
     <TextView
         android:id="@+id/baymax_is"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="0dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="@dimen/vertical_margin"
         android:text="베이맥스는..."
         app:layout_constraintStart_toStartOf="@+id/baymax_is_not"
-        app:layout_constraintTop_toBottomOf="@+id/baymax_image" />
+        app:layout_constraintTop_toBottomOf="@+id/search_baymax" />
 
     <CheckBox
         android:id="@+id/baymax_agree"
@@ -118,14 +115,14 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="감상문 작성(AU지급)"
         android:inputType="textLongMessage"
         app:layout_constraintBottom_toTopOf="@+id/baymax_agree"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/baymax_agree"
-        app:layout_constraintTop_toBottomOf="@+id/search_baymax" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/baymax_is_cute" />
 
     <Button
         android:id="@+id/submit"
