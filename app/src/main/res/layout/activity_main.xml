@@ -68,11 +68,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginTop="0dp"
         android:text="귀엽지 않다"
         app:layout_constraintEnd_toStartOf="@+id/baymax_is_cute"
-        app:layout_constraintTop_toTopOf="@+id/baymax_is_cute" />
+        app:layout_constraintTop_toTopOf="@+id/baymax_is_cute"
+        android:layout_marginRight="8dp" />
 
     <ImageButton
         android:id="@+id/search_baymax"
@@ -80,12 +80,12 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_search"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/baymax_image" />
+        app:layout_constraintTop_toBottomOf="@+id/baymax_image"
+        app:srcCompat="@drawable/ic_search" />
 
     <TextView
         android:id="@+id/baymax_is"
@@ -115,13 +115,13 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="감상문 작성(AU지급)"
         android:inputType="textLongMessage"
         app:layout_constraintBottom_toTopOf="@+id/baymax_agree"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/baymax_agree"
-        android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/baymax_is_cute" />
 
     <Button
@@ -142,12 +142,12 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
         android:layout_marginStart="0dp"
         android:text="임시저장"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/submit"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="0dp" />
+        app:layout_constraintStart_toEndOf="@+id/submit" />
 
 </android.support.constraint.ConstraintLayout>
