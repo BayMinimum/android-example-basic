@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">KSA 특별강연 보고서 제출 시스템</string>
+    <string name="hots">시.공.조.아\n히어로즈 오브 더 스톰의 역사와 철학</string>
+    <string name="reading_list">읽기 자료</string>
+    <string name="video">영상 자료</string>
+    <string name="type_here">Write your essay here</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="search_button">Search Button</string>
+    <string name="button">Button</string>
 </resources>
