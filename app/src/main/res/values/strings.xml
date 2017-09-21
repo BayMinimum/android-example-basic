@@ -7,4 +7,8 @@
     <string name="checkbox">CheckBox</string>
     <string name="search_button">Search Button</string>
     <string name="button">Button</string>
+    <string name="baymax">The Malang\n-베이맥스의 역사와 철학-</string>
+    <string name="submit">제출하기</string>
+    <string name="i_agree">동의합니다</string>
+    <string name="title_activity_reading">Reading Material</string>
 </resources>
